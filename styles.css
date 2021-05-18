@@ -1,0 +1,90 @@
+:root {
+    --primary: #023047;
+    --secondary: #FB8500;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+h1 {
+    text-align: center;
+    color: var(--secondary);
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.centered-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+
+.circle:hover {
+    opacity: 0.8;
+}
+
+.circle-zero {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+
+.square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--secondary);
+    z-index: -1;
+}
+
+.zero {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    
+}
+
+.zero:hover {
+    opacity: 0.8;
+}
+
+.output-box {
+    height: 100px;
+    width: 415px;
+    border: 5px solid var(--secondary);
+}
+
+.text-box-input {
+    color: var(--secondary);
+    font-size: xx-large;
+    text-align: end;
+    align-items: center;
+    /* padding: 0px 10px; */
+    position: absolute;
+    width: 410px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    
+}
